@@ -1,4 +1,7 @@
 #include <stdio.h>
+/* 
+ * Size doesnt matter
+*/ 
 int main(void)
 {
 	int a;
