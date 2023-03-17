@@ -26,12 +26,11 @@ int main(void)
 					putchar(ch + 48);
 					putchar(ch2 + 48);
 					putchar(ch3 + 48);
-
-					 if (ch + ch2 + ch3 != 24)
-					 {
+					if (ch + ch2 + ch3 != 24)
+					{
 						 putchar(',');
 						 putchar(' ');
-					 }
+					}
 				}
 				++ch3;
 			}
