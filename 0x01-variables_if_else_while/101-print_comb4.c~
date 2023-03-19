@@ -21,10 +21,7 @@ int main(void)
 			ch3 = 0;
 			while (ch3 <= 9)
 			{
-				if (ch != ch2 &&
-				    ch < ch2 &&
-				    ch2 != ch3 &&
-				    ch2 < ch3)
+				if (ch != ch2 && ch < ch2 && ch2 != ch3 && ch2 < ch3)
 				{
 					putchar(ch + 48);
 					putchar(ch2 + 48);
@@ -32,8 +29,8 @@ int main(void)
 
 					if (ch + ch2 + ch3 != 24)
 					{
-						putchar(',');
-						putchar(' ');
+						 putchar(',');
+						 putchar(' ');
 					}
 				}
 				++ch3;
@@ -43,6 +40,5 @@ int main(void)
 		++ch;
 	}
 	putchar('\n');
-
 	return (0);
 }
