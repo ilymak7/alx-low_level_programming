@@ -34,7 +34,7 @@ int main(void)
 			}
 			++ch2;
 		}
-		++ch
+		++ch;
 	}
 	putchar('\n');
 
