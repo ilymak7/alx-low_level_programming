@@ -1,19 +1,14 @@
 #include"main.h"
 
 /**
- * main - Entry point
- *
- * Description: prints _putchar using putchar proto
- *
- * Return: 0 Always (Success)
+ * print_alphabet - _putchar to print alphabet
 */
 
-int main(void)
+void print_alphabet(void)
 {
 	int ch;
 
 	for (ch = 'a'; ch <= 'z'; ++ch)
 		_putchar(ch);
 	_putchar('\n');
-	return (0);
 }
