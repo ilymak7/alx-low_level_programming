@@ -6,6 +6,7 @@
 int _isupper(int i);
 int _isdigit(int i);
 int mul(int i, int j);
+int _putchar(char c);
 void print_numbers(void);
 void print_most_numbers(void);
 void more_numbers(void);
