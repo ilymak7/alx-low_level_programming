@@ -1,4 +1,11 @@
 #include <stdio.h>
+/**
+ * main - entry poit
+ *
+ * Description : programme that prints a[2] = 98
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
