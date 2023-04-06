@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * compare - compare head and tail indices for match
