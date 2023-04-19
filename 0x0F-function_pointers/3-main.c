@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*op == 47 || *op == 37) && b == 0)
+	if((*op == 47 || *op == 37) && b == 0)
 	{
 		printf("Error\n");
 		exit(100);
