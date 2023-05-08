@@ -10,7 +10,7 @@ void close_file(int f);
  * Return: pointer to a new buffer.
  */
 
-char *create_file(char *filename)
+char *create_buffer(char *filename)
 {
 	char *buffer;
 
@@ -20,6 +20,7 @@ char *create_file(char *filename)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 		exit(99);
 	}
+	return (buffer);
 }
 /**
  * close_file - a function that closes a file.
@@ -30,8 +31,8 @@ void close_file(int f)
 {
 	int i;
 
-	c = close(f);
-	if (c == -1)
+	i = close(f);
+	if (i == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd%d\n", f);
 		exit(100);
@@ -51,10 +52,10 @@ int main(int argc, char *argv[])
 	int org, dst, r, w;
 	char *buffer;
 
-	if (arc != 3)
+	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exi(97);
+		exit(97);
 	}
 	buffer = create_buffer(argv[2]);
 	org = open(argv[1], O_RDONLY);
