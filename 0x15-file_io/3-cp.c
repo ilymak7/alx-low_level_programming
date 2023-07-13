@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - copy a file content to another
  * @argc: args count
@@ -39,12 +39,12 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	l1 = close(f1);
-	if (c1 < 0)
+	if (l1 < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", f1), exit(100);
 	}
 	l2 = close(f2);
-	if (c2 < 0)
+	if (l2 < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", f2), exit(100);
 	}
